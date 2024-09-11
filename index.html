@@ -14,7 +14,7 @@
         }
         #pdf-container {
             width: 100%;
-            height: calc(100% - 60px); /* Adjust height to leave space for audio */
+            height: calc(100% - 40px); /* Adjust height to leave space for audio */
             position: relative;
         }
         iframe {
@@ -30,11 +30,11 @@
             padding: 5px; /* Reduced padding */
             box-shadow: 0 -1px 5px rgba(0, 0, 0, 0.2);
             z-index: 1000; /* Ensure it stays on top */
-            font-size: 14px; /* Reduced font size */
             text-align: center; /* Center text */
         }
         audio {
-            width: 100%; /* Ensure audio player fits width */
+            width: 300px; /* Set a fixed width for audio player */
+            height: 30px; /* Set a fixed height for audio player */
         }
     </style>
 </head>
@@ -44,6 +44,7 @@
     </div>
     
     <div id="audio-container">
+        <h2 style="font-size: 12px; margin: 0;">Listen to Our Song</h2>
         <audio controls autoplay>
             <source src="song.mp3" type="audio/mpeg">
             Your browser does not support the audio element.
